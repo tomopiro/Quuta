@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  server:
+    container_name: server
+    build:
+        context: .
+        dockerfile: server/Dockerfile
+    ports:
+    - '80:80'
+    volumes:
+    - './server:/go/src/server'
+    working_dir: '/go/src/server'
+    environment:
+        DB_LOG: "true"
+    stdin_open: true
+    tty: true
