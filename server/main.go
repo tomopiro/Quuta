@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/tomopiro/Quuta/server/model"
+	"server/model"
 
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"

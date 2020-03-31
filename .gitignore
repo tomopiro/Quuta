@@ -1,3 +1,5 @@
 /db/data/*
 !/db/data/.gitkeep
+
 .DS_Store
+server/.DS_Store
