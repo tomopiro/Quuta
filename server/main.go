@@ -4,6 +4,8 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/tomopiro/Quuta/server/model"
+
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
@@ -45,7 +47,7 @@ func getUsers(c *gin.Context) {
 	db := gormConnect()
 	defer db.Close()
 
-	user := User{}
+	user := model.User{}
 	db.Where("id = ?", "1").First(&user)
 	c.String(http.StatusOK, user.Name+"\n")
 }
