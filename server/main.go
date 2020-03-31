@@ -2,7 +2,6 @@ package main
 
 import (
 	"net/http"
-	"time"
 
 	"github.com/tomopiro/Quuta/server/model"
 
@@ -53,8 +52,8 @@ func getUsers(c *gin.Context) {
 }
 
 // User user
-type User struct {
+/*type User struct {
 	ID        int
 	Name      string
 	CreatedAt time.Time
-}
+}*/
