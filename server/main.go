@@ -50,10 +50,3 @@ func getUsers(c *gin.Context) {
 	db.Where("id = ?", "1").First(&user)
 	c.String(http.StatusOK, user.Name+"\n")
 }
-
-// User user
-/*type User struct {
-	ID        int
-	Name      string
-	CreatedAt time.Time
-}*/
