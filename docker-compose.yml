@@ -38,4 +38,3 @@ services:
         - qnet
 networks:
     qnet:
-        
